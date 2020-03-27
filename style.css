@@ -1,0 +1,182 @@
+/** Base CSS **/
+* {
+  margin: 0;
+  padding: 0; 
+}
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: #a3a5ae;
+  background-color: #FAFAFA; 
+}
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #4c4e61;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4c4e61;
+}
+p {
+  line-height: 1.8em; 
+}
+a {
+  text-decoration: none;
+  color: #a3a5ae; 
+}
+ul, li {
+  margin: 0; 
+}
+ul li, li li {
+  list-style: none; 
+}
+img {
+  width: auto;
+  max-width: 100%; 
+}
+
+/** General CSS **/
+.section-container {
+  padding: 20px; 
+}
+.grid-row {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.grid-col-12 {
+  flex: 100%;
+  max-width: 100%; 
+}
+.grid-col-11 {
+  flex: 91.66%;
+  max-width: 91.66%; 
+}
+.grid-col-10 {
+  flex: 83.33%;
+  max-width: 83.33%; 
+}
+.grid-col-9 {
+  flex: 75%;
+  max-width: 75%; 
+}
+.grid-col-8 {
+  flex: 66.66%;
+  max-width: 66.66%; 
+}
+.grid-col-7 {
+  flex: 58.33%;
+  max-width: 58.33%; 
+}
+.grid-col-6 {
+  flex: 50%;
+  max-width: 50%; 
+}
+.grid-col-5 {
+  flex: 41.66%;
+  max-width: 41.66%; 
+}
+.grid-col-4 {
+  flex: 33.33%;
+  max-width: 33.33%; 
+}
+.grid-col-3 {
+  flex: 25%;
+  max-width: 25%; 
+}
+.grid-col-2 {
+  flex: 16.66%;
+  max-width: 16.66%; 
+}
+.grid-col-1 {
+  flex: 8.333%;
+  max-width: 8.333%; 
+}
+section {
+  padding: 50px 20px;
+}
+.intro-box {
+  text-align: center;
+  max-width: 525px;
+  margin: 30px auto;
+}
+.intro-box p {
+  margin-top: 10px;
+}
+h2.light {
+  font-weight: 200;
+}
+
+/** Feature Section CSS **/
+.cards {
+  max-width: 80%;
+  margin: 60px auto 10px;
+}
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  padding: 25px 30px;
+  margin: 13px;
+  border-radius: 7px;
+  box-shadow: 0px 10px 18px -2px #DAE3F1;
+  position: relative;
+  overflow: hidden;
+}
+.card p {
+  font-size: 12px;
+  transition: 300ms ease-out;
+}
+.card h6 {
+  margin-bottom: 6px;
+  transition: 300ms ease-out;
+}
+.card .card-content div {
+  margin-top: 40px;
+  text-align: right;
+}
+.card#supervisor {
+  border-top: 4px solid #45d3d3;
+}
+.card#teambuilder {
+  border-top: 4px solid #ea5353;
+}
+.card#karma {
+  border-top: 4px solid #fcaf4a;
+}
+.card#calculator {
+  border-top: 4px solid #549ef2;
+}
+.circle-overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.card .card-content {
+  position: relative;
+}
+.card:hover .card-content p, .card:hover .card-content h6 {
+  color: #fff;
+}
+
+/** Responsive CSS **/
+@media (max-width: 768px) {
+  .cards {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .grid-col-4 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
